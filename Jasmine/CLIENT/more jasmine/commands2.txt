@@ -1,0 +1,118 @@
+create another test2.spec.js 
+in the same folder
+describe('calculator', function() {
+	it('add numbers', function()
+	{
+		console.log('Adding 2 numbers!')
+	});
+});
+
+and run again jasmine
+you will see the console prints
+
+update the file:
+
+describe('calculator', function() {
+	it('add numbers', function()
+	{
+		console.log('Adding 2 numbers!')
+	});
+	it('add numbers', function()
+	{
+		console.log('Adding 2 numbers!')
+	});
+});
+
+and run again jasmine
+you will see the console prints X 2
+
+you could also have a describe inside a describe
+
+update the code:
+class Calculator {
+	
+	add(a, b)
+	{
+		return a + b;
+	}
+	minus(a, b)
+	{
+		return a - b;
+	}	
+}
+
+describe('calculator', function() {
+	
+	var c = new Calculator();
+	it('add numbers', function()
+	{
+		console.log('Adding 2 numbers! ' + c.add(2, 5));
+	});
+	it('add numbers', function()
+	{
+		console.log('Adding 2 numbers!')
+	});	
+});
+
+
+and run again jasmine
+
+
+class Calculator {
+	
+	add(a, b)
+	{
+		return a + b;
+	}
+	minus(a, b)
+	{
+		return a - b;
+	}	
+}
+
+describe('calculator', function() {
+	
+	var c = new Calculator();
+	it('add numbers', function()
+	{
+		console.log('Adding 2 numbers! ' + c.add(2, 5));
+		expect(c.add(2,5)).toBe(7);
+	});
+	it('add numbers', function()
+	{
+		console.log('Adding 2 numbers!')
+	});	
+});
+
+and run again jasmine [se the expect success!]
+now lets change ti to fail:
+and run again jasmine:
+
+class Calculator {
+	
+	add(a, b)
+	{
+		return a + b;
+	}
+	minus(a, b)
+	{
+		return a - b;
+	}	
+}
+
+describe('calculator', function() {
+	
+	var c = new Calculator();
+	it('add numbers', function()
+	{
+		console.log('Adding 2 numbers! ' + c.add(2, 5));
+		expect(c.add(2,5)).toBe(8);
+	});
+	it('add numbers', function()
+	{
+		console.log('Adding 2 numbers!')
+	});	
+});
+
+
+and run again jasmine [see the expect failure

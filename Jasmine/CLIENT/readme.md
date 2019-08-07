@@ -1,0 +1,85 @@
+
+
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\itayk>node -v
+v6.11.0
+
+C:\Users\itayk>d:
+
+D:\>cd jasmin
+
+D:\Jasmin>mkdir project
+
+D:\Jasmin>cd project
+
+D:\Jasmin>npm install -g jasmine
+C:\Users\itayk\AppData\Roaming\npm\jasmine -> C:\Users\itayk\AppData\Roaming\npm\node_modules\jasmine\bin\jasmine.jsC:\Users\itayk\AppData\Roaming\npm
+`-- jasmine@2.6.0
+  +-- exit@0.1.2
+  +-- glob@7.1.2
+  | +-- fs.realpath@1.0.0
+  | +-- inflight@1.0.6
+  | | `-- wrappy@1.0.2
+  | +-- inherits@2.0.3
+  | +-- minimatch@3.0.4
+  | | `-- brace-expansion@1.1.8
+  | |   +-- balanced-match@1.0.0
+  | |   `-- concat-map@0.0.1
+  | +-- once@1.4.0
+  | `-- path-is-absolute@1.0.1
+  `-- jasmine-core@2.6.4
+
+D:\Jasmin>npm list -g
+C:\Users\itayk\AppData\Roaming\npm
+`-- jasmine@2.6.0
+  +-- exit@0.1.2
+  +-- glob@7.1.2
+  | +-- fs.realpath@1.0.0
+  | +-- inflight@1.0.6
+  | | `-- wrappy@1.0.2
+  | +-- inherits@2.0.3
+  | +-- minimatch@3.0.4
+  | | `-- brace-expansion@1.1.8
+  | |   +-- balanced-match@1.0.0
+  | |   `-- concat-map@0.0.1
+  | +-- once@1.4.0
+  | `-- path-is-absolute@1.0.1
+  `-- jasmine-core@2.6.4
+
+
+D:\Jasmin>jasmine
+Started
+
+
+No specs found
+Finished in 0.005 seconds
+
+D:\Jasmin>jasmine init
+
+D:\Jasmin>cd spec
+
+go into spec and create test.spec.js [you must include X.spec.js]
+
+write the file...
+
+describe('hello world', function() {
+	it('hello test', function()
+	{
+		
+	});
+});
+
+D:\Jasmin\specs>cd ..
+
+D:\Jasmin>jasmine
+Started
+.
+
+
+1 spec, 0 failures
+Finished in 0.008 seconds
+
+D:\Jasmin>npm install xmlhttprequest
+
